@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sort list</title>
+        <script type="text/javascript">
+        
+        function sortUnorderedList(ul, sortDescending) 
+        {
+          if(typeof ul == "string")
+            ul = document.getElementById(ul);
+
+          var lis = ul.getElementsByTagName("ul");
+          var vals = [];
+
+          for(var i = 0, l = lis.length; i < l; i++)
+            vals.push(lis[i].innerHTML);
+
+          vals.sort();
+
+          if(sortDescending)
+            vals.reverse();
+
+          for(var i = 0, l = lis.length; i < l; i++)
+            lis[i].innerHTML = vals[i];
+        }
+        
+        window.onload = function() {
+          var desc = false;
+          document.getElementById("test").onclick = function() {
+            sortUnorderedList("list", desc);
+            desc = !desc;
+            return false;
+          }
+        }
+        
+        </script>
+    </head>
+    <body>
+
+      <input type="button" id="test" value="(click to sort users)"/>
+      <ul id="list">
+
+
+<img src="images\e6.jpg" style="width:30px;height:30px;"><ul>Raji</ul>
+<img src="images\e7.jpg" style="width:30px;height:30px;"> <ul>Vji</ul>
+<img src="images\e8.jpg" style="width:30px;height:30px;"> <ul>Karthi</ul>           
+<img src="images\b7.jpg" style="width:30px;height:30px;"> <ul>Sowmiya</ul>
+<img src="images\b8.jpg" style="width:30px;height:30px;"><ul>Adhav</ul>
+<img src="images\b9.jpg" style="width:30px;height:30px;"> <ul>Suresh</ul> 
+<img src="images\c1.jpg" style="width:30px;height:30px;">  <ul>Durai</ul>
+<img src="images\c2.jpg" style="width:30px;height:30px;"> <ul>Ammu</ul>
+<img src="images\c3.jpg" style="width:30px;height:30px;">    <ul>Prem</ul>            
+<img src="images\e6.jpg" style="width:30px;height:30px;"><ul>Mary</ul>
+<img src="images\e7.jpg" style="width:30px;height:30px;"> <ul>Frank</ul>
+<img src="images\e8.jpg" style="width:30px;height:30px;"> <ul>Hema</ul>
+<img src="images\e9.jpg" style="width:30px;height:30px;"> <ul>Aisha</ul>                      
+<img src="images\b7.jpg" style="width:30px;height:30px;"> <ul>James</ul>
+<img src="images\b8.jpg" style="width:30px;height:30px;"><ul>Vicki</ul>
+<img src="images\b9.jpg" style="width:30px;height:30px;"> <ul>Paul</ul> 
+<img src="images\c1.jpg" style="width:30px;height:30px;">  <ul>Bala</ul>
+<img src="images\c2.jpg" style="width:30px;height:30px;"> <ul>Dana</ul>
+<img src="images\c3.jpg" style="width:30px;height:30px;">    <ul>Giri</ul>
+<img src="images\e6.jpg" style="width:30px;height:30px;"><ul>Mano</ul>
+<img src="images\e7.jpg" style="width:30px;height:30px;"> <ul>Gayathiri</ul>
+<img src="images\e8.jpg" style="width:30px;height:30px;"> <ul>Kalai</ul>
+<img src="images\e9.jpg" style="width:30px;height:30px;"> <ul>Sarala</ul>           
+<img src="images\b7.jpg" style="width:30px;height:30px;"> <ul>Selvam</ul>
+<img src="images\b8.jpg" style="width:30px;height:30px;"><ul>Mani</ul>
+<img src="images\b9.jpg" style="width:30px;height:30px;"> <ul>John</ul> 
+<img src="images\c1.jpg" style="width:30px;height:30px;">  <ul>Anitha</ul>
+<img src="images\c2.jpg" style="width:30px;height:30px;"> <ul>Ganga</ul>
+<img src="images\c3.jpg" style="width:30px;height:30px;"> <ul>Priya</ul>
+            
+        </ul>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
